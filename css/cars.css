@@ -816,7 +816,7 @@ body._touch .menu__list > li:nth-child(9) {
 .cars-header__items {
     display: flex;
     justify-content: space-between;
-    max-width: 272px;
+    max-width: 185px;
     width: 100%;
 }
 .cars-header__item {
