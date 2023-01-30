@@ -639,12 +639,15 @@ body._touch .menu__list > li:nth-child(9) {
 
 .header-media {
     position: fixed;
+    left: 0;
     width: 100%;
+    height: 70px;
     z-index: 30;
     display: none;
     justify-content: space-between;
     align-items: center;
     padding: 20px 22px;
+    background: #050402;
 }
 .header-media__item {
     display: flex;
@@ -846,13 +849,13 @@ body._touch .menu__list > li:nth-child(9) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 40px;
 }
 .promocodes__item {
     position: relative;
-    flex: 0 1 354px;
-    max-width: 354px;
+    flex: 0 1 340px;
+    max-width: 340px;
     width: 100%;
     background: #F5F5F5;
     transition: all 0.3s ease 0s;
