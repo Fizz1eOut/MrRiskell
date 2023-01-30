@@ -1110,7 +1110,7 @@ body._touch .menu__list > li:nth-child(9) {
         margin-bottom: 20px;
     }
     .body-contact__number {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 43px;
     }
     .body-contact__info-text {
@@ -1146,6 +1146,9 @@ body._touch .menu__list > li:nth-child(9) {
     }
     .body-managers {
         margin-bottom: 120px;
+    }
+    .body-managers__content {
+        justify-content: start;
     }
 }
 
