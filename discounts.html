@@ -69,23 +69,67 @@
                         <img src="./img/header/logo.png" alt="">
                     </a><!-- header__logo -->
     
-                    <div class="header__icons icons-header">
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/01.png" alt="">
-                        </a>
+                    <div class="header-media__item">
+                        <h2 class="header-media__title">Меню</h2>
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                    </div>
     
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/02.png" alt="">
-                        </a>
+                    <form action="" class="form-row">
+                        <input class="form-row__input" type="search" placeholder="Поиск">
+                        <label class="form-row__label" for=""></label>
+                    </form>
     
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/03.png" alt="">
-                        </a>
-                    </div><!-- header__icons icons-header -->
+                    <div class="header-icons" id="header">
+                        <ul class="header-icons__items" id=top_menu>
+                          <li class="header-icons__item"><a href="#"><span class="quantity"></span><img src="./img/header/icons/01.png" alt=""></a>
+                            <ul class="inner_menu">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title basket-title">Корзина</h4>
+                                        <div data-cart-empty class="alert alert-secondary" role="alert">
+                                            Корзина пуста
+                                        </div>
+                                        <!-- cart-wrapper -->
+                                        <div class="cart-wrapper">
+                
+                                        </div>
+                                        <!-- // cart-wrapper -->
+                
+                                        <!-- Стоимость заказа -->
+                                        <div class="cart-total">
+                                            <!-- <p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p> -->
+                                            <p><span class="total-title">Итого:</span> <span class="total-price">0</span> <span class="rouble">$</span></p>
+                                        </div>
+                                        <!-- // Стоимость заказа -->
+                
+                                    </div>
+                
+                                    <!-- Оформить заказ -->
+                                    <div id="order-form" class="card-body border-top">
+                                        <button type="submit" class="btn-primary">Заказать</button>
+                                        
+                                        <!-- <h5 class="card-title">Оформить заказ</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                                            </div>
+                                        </form> -->
+                                    </div>
+                                    <!-- // Оформить заказ -->
+                
+                                </div>
+                            </ul>
+                          </li>
+    
+                          <li><a href="#"><img src="./img/header/icons/02.png" alt=""></a></li>
+                          <li><a href="#"><img src="./img/header/icons/03.png" alt=""></a></li>
+                        </ul>
+                      </div>
     
                 </div><!-- header__body -->
     
-                <div class="header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li>
@@ -472,13 +516,6 @@
                             </li>
     
                             <li>
-                                <form action="" class="form-row">
-                                    <input class="form-row__input" type="search" placeholder="Поиск">
-                                    <label class="form-row__label" for=""></label>
-                                </form>
-                            </li>
-    
-                            <li>
                                 <div class="header-media__content content-media">
                                     <div class="content-media__items">                           
                                             <div class="content-media__item">
@@ -523,36 +560,8 @@
                             </li>
                         </ul>
                     </nav><!-- menu__body -->
-                    
-                </div><!-- header__menu menu -->
     
-                <div class="header-media">
-                    <div class="header-media__item">
-                        <h2 class="header-media__title">Меню</h2>
-                        <div class="menu__icon">
-                            <span></span>
-                        </div>
-                    </div>
     
-                    <form action="" class="header-media__form form-header">
-                        <input class="form-header__input" type="search" placeholder="Поиск">
-                        <label class="form-header__label" for=""></label>
-                    </form>
-    
-                    <div class="header__icons icons-header">
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/01.png" alt="">
-                        </a>
-    
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/02.png" alt="">
-                        </a>
-    
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/03.png" alt="">
-                        </a>
-                    </div><!-- header__icons icons-header -->
-                </div><!-- header-media -->
             </div><!-- header__container -->
         </header><!-- header -->
 
@@ -581,852 +590,1187 @@
                                 <button class="cars__tabs-nav-btn" type="button" data-tab="#tab_4">Расходники</button>
                             </div>
                             <div class="cars__tabs-content">
-                                <div class="header-filter__row">
-                                    <div class="header-filter__items">
-                                        <div class="header-filter__image">
-                                            <img src="./img/filter.svg" alt="">
-                                            <div class="header-filter__text">Фильтр</div>
-                                        </div><!-- header-filter__item -->
-
-                                        <div class="header-filter__select">
-                                            <h3 class="form-cars__title">Сортировка</h3>
-                                            <select name="select" id="" class="form-cars__select">
-                                                <option value="1">Популярные</option>
-                                                <option value="2">По алфавиту</option>
-                                                <option value="3">Дешёвые</option>
-                                                <option value="4">Дорогие</option>
-                                            </select>
-                                        </div><!-- header-filter__item -->
-                                    </div><!-- header-filter__items -->
-                                </div><!-- header-filter__row -->
-                                
-                                <form action="" class="form-filter-cars">
-                                    <div class="form-filter-cars__content content-filter">
-                                        <h2 class="content-filter__title">Фильтр</h2>
-
-                                        <div class="content-filter__items">
-                                            <div class="content-filter__item price-filter">
-                                                <h3 class="price-filter__title title-filter">Цена</h3>
-                                                <div class="price-filter__items">
-                                                    <div class="price-filter__item">
-                                                        <input type="text" class="price-filter__input" placeholder="От">
-                                                    </div><!-- price-filter__item -->
-                                                    -
-                                                    <div class="price-filter__item">
-                                                        <input type="text" class="price-filter__input" placeholder="До">
-                                                    </div><!-- price-filter__item -->
-                                                </div><!-- price-filter__items -->
-                                            </div><!-- content-filter__item -->
-
-                                            <div class="content-filter__item sorting-filter">
-                                                <h3 class="sorting-filter__title title-filter">Сортировка</h3>
-                                                <div class="sorting-filter__items">
-                                                    <div class="sorting-filter__item">
-                                                        <input class="sorting-filter__input" checked type="radio" id="radio_1" name="radio"/>
-                                                        <label class="sorting-filter__label" for="radio_1">Популярные</label>
-                                                    </div><!-- sorting-filter__item -->
-
-                                                    <div class="sorting-filter__item">
-                                                        <input class="sorting-filter__input" type="radio" id="radio_2" name="radio"/>
-                                                        <label class="sorting-filter__label" for="radio_2">По алфавиту</label>
-                                                    </div><!-- sorting-filter__item -->
-
-                                                    <div class="sorting-filter__item">
-                                                        <input class="sorting-filter__input" type="radio" id="radio_3" name="radio"/>
-                                                        <label class="sorting-filter__label" for="radio_3">Дешевые</label>
-                                                    </div><!-- sorting-filter__item -->
-
-                                                    <div class="sorting-filter__item">
-                                                        <input class="sorting-filter__input" type="radio" id="radio_4" name="radio"/>
-                                                        <label class="sorting-filter__label" for="radio_4">Дорогие</label>
-                                                    </div><!-- sorting-filter__item -->
-                                                </div><!-- sorting-filter__items -->
-                                            </div><!-- content-filter__item sorting-filter -->
-
-                                            <div class="content-filter__item type-filter">
-                                                <h3 class="type-filter__title title-filter">Тип машинки</h3>
-                                                
-                                                <div class="type-filter__items">
-                                                    <div class="type-filter__item">
-                                                        <input class="type-filter__input" type="checkbox" id="checkbox_1" name="checkbox"/>
-                                                        <label class="type-filter__label" for="checkbox_1">Выделить все</label>
-                                                    </div><!-- type-filter__item -->
-
-                                                    <div class="type-filter__item">
-                                                        <input class="type-filter__input" type="checkbox" id="checkbox_2" name="checkbox"/>
-                                                        <label class="type-filter__label" for="checkbox_2">Роторная</label>
-                                                    </div><!-- type-filter__item -->
-
-                                                    <div class="type-filter__item">
-                                                        <input class="type-filter__input" type="checkbox" id="checkbox_3" name="checkbox"/>
-                                                        <label class="type-filter__label" for="checkbox_3">Индукционная</label>
-                                                    </div><!-- type-filter__item -->
-
-                                                    <div class="type-filter__item">
-                                                        <input class="type-filter__input" type="checkbox" id="checkbox_4" name="checkbox"/>
-                                                        <label class="type-filter__label" for="checkbox_4">Еще один вид</label>
-                                                    </div><!-- type-filter__item -->
-
-                                                    <div class="type-filter__item">
-                                                        <input class="type-filter__input" type="checkbox" id="checkbox_5" name="checkbox"/>
-                                                        <label class="type-filter__label" for="checkbox_5">Другой тип машинки</label>
-                                                    </div><!-- type-filter__item -->
-                                                </div><!-- type-filter__items -->
-                                            </div><!-- content-filter__item type-filter -->
-
-                                            <div class="content-filter__item only-stock-filter">
-                                                <h3 class="only-stock-filter__title title-filter">Только в наличии</h3>
-                                                <div class="only-stock-filter__checkbox">
-                                                    <input class="cars-checkbox-input" type="checkbox">
-                                                </div>
-                                            </div>
-                                        </div><!-- content-filter__items -->
-                                    </div><!-- form-filter-cars__content -->
-                                </form><!-- form-filter-cars -->
-                                
-                                <form action="" class="cars__form form-cars">
-                                    <div class="form-cars__content">
-                                        <div class="form-cars__item">
-                                            <h3 class="form-cars__title">Цена</h3>
-                                            <div class="form-cars__price price-cars">
-                                                <div class="price-cars__items">
-                                                    <div class="price-cars__item">
-                                                        <input type="text" class="price-cars__input" placeholder="От">
-                                                    </div>
-                                                    -
-                                                    <div class="price-cars__item">
-                                                        <input type="text" class="price-cars__input" placeholder="До">
-                                                    </div>
-                                                </div><!-- price-cars__items -->
-                                            </div><!-- form-cars__price price-cars -->
-                                        </div><!-- form-cars__item -->
-
-                                        <div class="form-cars__item">
-                                            <h3 class="form-cars__title">Тип машинки</h3>
-                                            <select name="select" id="" class="form-cars__select">
-                                                <option value="1">Роторная</option>
-                                                <option value="2">Индукционная</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-cars__item">
-                                            <h3 class="form-cars__title">Только в наличии</h3>
-                                            <div class="form-cars__checkbox">
-                                                <input class="cars-checkbox-input" type="checkbox">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-cars__item">
-                                            <h3 class="form-cars__title">Сортировка</h3>
-                                            <select name="select" id="" class="form-cars__select">
-                                                <option value="1">Популярные</option>
-                                                <option value="2">По алфавиту</option>
-                                                <option value="3">Дешёвые</option>
-                                                <option value="4">Дорогие</option>
-                                            </select>
-                                        </div>
-                                    </div><!-- form-cars__content -->
-                                </form><!-- cars__form form-cars -->
                                 
                                 <div class="cars__tabs-item active" id="tab_1">
-                                    <div class="new-products" id="new-products">
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/01.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Foxxx Kitsune Mini Black Vintage lot #1 RCA </h3>
-                                                <div class="new-products__price">6 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                    <div class="products-row">
+                                        <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="01">
+                                    <img class="card-img" src="./img/goods/new-products/01.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Kitsune Mini Black Vintage RCA</h4>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/02.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h3>
-                                                <div class="new-products__price">8 730</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/product/04.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Нитровиниловые перчатки Wally Plastic S</h3>
-                                                <div class="new-products__price">6 500</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/product/01.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</h3>
-                                                <div class="new-products__price">14 550</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Ролл -->
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/product/02.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h3>
-                                                <div class="new-products__price">22 450</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="02">
+                                    <img class="card-img" src="./img/goods/new-products/02.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h4>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/product/03.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Deuce Machines Direct Drive #7 RCA Samurai</h3>
-                                                <div class="new-products__price">19 400</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/07.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h3>
-                                                <div class="new-products__price">11 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="03">
+                                    <img class="card-img" src="./img/goods/new-products/03.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Kitsune Mini Vintage Aging With Gold RCA</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="05">
+                                    <img class="card-img" src="./img/goods/new-products/05.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="06">
+                                    <img class="card-img" src="./img/goods/new-products/06.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="07">
+                                    <img class="card-img" src="./img/goods/new-products/07.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="08">
+                                    <img class="card-img" src="./img/goods/new-products/08.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
-                                    </div><!-- new-products -->
+                                    </div>
                                 </div><!-- cars__tabs-item -->
                     
                                 <div class="cars__tabs-item" id="tab_2">
-                                    <div class="new-products">
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/01.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Foxxx Kitsune Mini Black Vintage lot #1 RCA</h3>
-                                                <div class="new-products__price">6 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                    <div class="products-row">
+                                        <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="01">
+                                    <img class="card-img" src="./img/goods/new-products/01.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Kitsune Mini Black Vintage RCA</h4>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/02.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h3>
-                                                <div class="new-products__price">8 730</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/product/04.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Нитровиниловые перчатки Wally Plastic S</h3>
-                                                <div class="new-products__price">2 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/04.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</h3>
-                                                <div class="new-products__price">2 347</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Ролл -->
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/05.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h3>
-                                                <div class="new-products__price">3 100</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="02">
+                                    <img class="card-img" src="./img/goods/new-products/02.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h4>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/06.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Deuce Machines Direct Drive #7 RCA Samurai</h3>
-                                                <div class="new-products__price">8 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/07.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h3>
-                                                <div class="new-products__price">11 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="03">
+                                    <img class="card-img" src="./img/goods/new-products/03.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Kitsune Mini Vintage Aging With Gold RCA</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="05">
+                                    <img class="card-img" src="./img/goods/new-products/05.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="06">
+                                    <img class="card-img" src="./img/goods/new-products/06.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="07">
+                                    <img class="card-img" src="./img/goods/new-products/07.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="08">
+                                    <img class="card-img" src="./img/goods/new-products/08.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text-bestseller">Хит продаж</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
-                                    </div><!-- new-products -->
+                                    </div>
                                  </div><!-- cars__tabs-item -->
                     
                                 <div class="cars__tabs-item" id="tab_3">
-                                    <div class="new-products">
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/01.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Foxxx Kitsune Mini Black Vintage lot #1 RCA</h3>
-                                                <div class="new-products__price">6 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                    <div class="products-row">
+                                        <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="01">
+                                    <img class="card-img" src="./img/goods/new-products/01.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Kitsune Mini Black Vintage RCA</h4>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/02.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h3>
-                                                <div class="new-products__price">8 730</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/03.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Нитровиниловые перчатки Wally Plastic S</h3>
-                                                <div class="new-products__price">2 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                            
-                                        </div><!-- new-products__item -->
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/04.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</h3>
-                                                <div class="new-products__price">2 347</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Ролл -->
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/05.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h3>
-                                                <div class="new-products__price">3 100</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="02">
+                                    <img class="card-img" src="./img/goods/new-products/02.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h4>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/06.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Deuce Machines Direct Drive #7 RCA Samurai</h3>
-                                                <div class="new-products__price">8 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/07.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h3>
-                                                <div class="new-products__price">11 000</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
-                                            </div>
-                                        </div><!-- new-products__item -->
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
         
-                                        <div class="new-products__item">
-                                            <div class="new-products__image">
-                                                <div class="new-products__icon icon-product">
-                                                    <div class="icon-product__text">Новинка</div>
-                                                    <div class="icon-product__icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div><!-- new-products__icon icon-product -->
-                                                <img src="./img/goods/new-products/08.png" alt="">
-                                            </div><!-- new-products__image -->
-                                            <div class="new-products__content">
-                                                <h3 class="new-products__title">Verge Direct 2.1 Gunmetal серебристый</h3>
-                                                <div class="new-products__price">10 900</div>
-                                                <button type="button" class="new-products__button button">Добавить в корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="03">
+                                    <img class="card-img" src="./img/goods/new-products/03.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Foxxx Kitsune Mini Vintage Aging With Gold RCA</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
                                             </div>
-                                        </div><!-- new-products__item -->
-                                    </div><!-- new-products -->
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Ролл -->
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="05">
+                                    <img class="card-img" src="./img/goods/new-products/05.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="06">
+                                    <img class="card-img" src="./img/goods/new-products/06.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="07">
+                                    <img class="card-img" src="./img/goods/new-products/07.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="08">
+                                    <img class="card-img" src="./img/goods/new-products/08.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__card">
+                                <div class="card" data-id="04">
+                                    <img class="card-img" src="./img/goods/new-products/04.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Skinductor Vertigo Long Stroke</h4>
+        
+                                        <div class="details-wrapper">
+                                            <div class="items counter-wrapper">
+                                                <div class="items__control" data-action="minus">-</div>
+                                                <div class="items__current" data-counter>1</div>
+                                                <div class="items__control" data-action="plus">+</div>
+                                            </div>
+                                        
+                                            <div class="price">
+                                                <div class="price__currency">300 $</div>
+                                            </div>
+                                        </div>
+        
+                                        <button data-cart type="button" class="card-button">Добавить в корзину</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                                    </div>
                                 </div><!-- goods__tabs-item -->
         
                                 <div class="cars__tabs-item" id="tab_4">

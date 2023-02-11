@@ -89,14 +89,14 @@ tabsButton.forEach(function(item) {
   });
 });
 
+
 // menu burger
-const headerMedia = document.querySelector('.header-media');
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock')
-        headerMedia.classList.toggle('_active');
+        iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     })
 }
@@ -252,7 +252,7 @@ new Swiper('.products-slide__swiper',{
     320: {
         slidesPerView: 1,
     },
-    480: {
+    520: {
         slidesPerView: 2,
     },
     992: {

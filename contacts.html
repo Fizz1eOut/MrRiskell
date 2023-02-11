@@ -69,23 +69,67 @@
                         <img src="./img/header/logo.png" alt="">
                     </a><!-- header__logo -->
     
-                    <div class="header__icons icons-header">
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/01.png" alt="">
-                        </a>
+                    <div class="header-media__item">
+                        <h2 class="header-media__title">Меню</h2>
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                    </div>
     
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/02.png" alt="">
-                        </a>
+                    <form action="" class="form-row">
+                        <input class="form-row__input" type="search" placeholder="Поиск">
+                        <label class="form-row__label" for=""></label>
+                    </form>
     
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/03.png" alt="">
-                        </a>
-                    </div><!-- header__icons icons-header -->
+                    <div class="header-icons" id="header">
+                        <ul class="header-icons__items" id=top_menu>
+                          <li class="header-icons__item"><a href="#"><span class="quantity"></span><img src="./img/header/icons/01.png" alt=""></a>
+                            <ul class="inner_menu">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title basket-title">Корзина</h4>
+                                        <div data-cart-empty class="alert alert-secondary" role="alert">
+                                            Корзина пуста
+                                        </div>
+                                        <!-- cart-wrapper -->
+                                        <div class="cart-wrapper">
+                
+                                        </div>
+                                        <!-- // cart-wrapper -->
+                
+                                        <!-- Стоимость заказа -->
+                                        <div class="cart-total">
+                                            <!-- <p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p> -->
+                                            <p><span class="total-title">Итого:</span> <span class="total-price">0</span> <span class="rouble">$</span></p>
+                                        </div>
+                                        <!-- // Стоимость заказа -->
+                
+                                    </div>
+                
+                                    <!-- Оформить заказ -->
+                                    <div id="order-form" class="card-body border-top">
+                                        <button type="submit" class="btn-primary">Заказать</button>
+                                        
+                                        <!-- <h5 class="card-title">Оформить заказ</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                                            </div>
+                                        </form> -->
+                                    </div>
+                                    <!-- // Оформить заказ -->
+                
+                                </div>
+                            </ul>
+                          </li>
+    
+                          <li><a href="#"><img src="./img/header/icons/02.png" alt=""></a></li>
+                          <li><a href="#"><img src="./img/header/icons/03.png" alt=""></a></li>
+                        </ul>
+                      </div>
     
                 </div><!-- header__body -->
     
-                <div class="header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li>
@@ -110,7 +154,7 @@
                                                     </li>
                     
                                                     <li class="menu__item">
-                                                        <a href="" class="menu__sub-link">Тату машинки</a>
+                                                        <a href="./cars.html" class="menu__sub-link">Тату машинки</a>
                                                     </li>
                     
                                                     <li class="menu__item">
@@ -466,16 +510,9 @@
                             <li>
                                 <a href="./cars.html" class="menu__link">Тату машинки</a>
                             </li>
-
-                            <li>
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
     
                             <li>
-                                <form action="" class="form-row">
-                                    <input class="form-row__input" type="search" placeholder="Поиск">
-                                    <label class="form-row__label" for=""></label>
-                                </form>
+                                <a href="./contacts.html" class="menu__link">Контакты</a>
                             </li>
     
                             <li>
@@ -523,35 +560,8 @@
                             </li>
                         </ul>
                     </nav><!-- menu__body -->
-                </div><!-- header__menu menu -->
     
-                <div class="header-media">
-                    <div class="header-media__item">
-                        <h2 class="header-media__title">Меню</h2>
-                        <div class="menu__icon">
-                            <span></span>
-                        </div>
-                    </div>
     
-                    <form action="" class="header-media__form form-header">
-                        <input class="form-header__input" type="search" placeholder="Поиск">
-                        <label class="form-header__label" for=""></label>
-                    </form>
-    
-                    <div class="header__icons icons-header">
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/01.png" alt="">
-                        </a>
-    
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/02.png" alt="">
-                        </a>
-    
-                        <a href="" class="icons-header__item">
-                            <img src="./img/header/icons/03.png" alt="">
-                        </a>
-                    </div><!-- header__icons icons-header -->
-                </div><!-- header-media -->
             </div><!-- header__container -->
         </header><!-- header -->
 
@@ -837,6 +847,10 @@
         </footer><!-- footer -->
         <button class="btn-top"></button>
     </div>
+    <script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/contacts.js"></script>
 </body>

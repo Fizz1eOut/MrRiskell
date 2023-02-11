@@ -91,13 +91,12 @@ tabsButton.forEach(function(item) {
 });
 
 // menu burger
-const headerMedia = document.querySelector('.header-media');
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock')
-        headerMedia.classList.toggle('_active');
+        iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     })
 }
@@ -145,7 +144,7 @@ let loadMoreBtn = document.querySelector('#load-more-btn');
 let currentItem = 4;
 
 loadMoreBtn.onclick = () => {
-    let boxes = [...document.querySelectorAll('.new-products .new-products__item')];
+    let boxes = [...document.querySelectorAll('.products-row .products__card')];
 
     for (var i = currentItem; i < currentItem + 4; i++) {
         boxes[i].style.display = "inline-block";
