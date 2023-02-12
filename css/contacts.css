@@ -1233,7 +1233,9 @@ body._touch .menu__list > li:nth-child(9) {
 }
 .support-item__online::before {
     content: "";
-    padding: 0px 8px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #C91B1B;
     margin-right: 10px;
@@ -1351,7 +1353,9 @@ body._touch .menu__list > li:nth-child(9) {
 
 .row-body-managers__online::before {
     content: "";
-    padding: 0px 8px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #1BC956;
     margin-right: 10px;
